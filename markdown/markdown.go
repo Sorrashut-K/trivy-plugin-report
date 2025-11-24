@@ -196,7 +196,7 @@ func countSeverity(md *utils.Markdown, SeverityCount map[string]map[string]int) 
 	})
 	md.SetText(fmt.Sprintf("本次共扫描出 %v 个漏洞，超危漏洞有 %v 个，占比 %.2f%% ；高危漏洞有 %v 个，占比 %.2f%% 。",
 		all, critical, float64(critical)/float64(all)*100, high, float64(high)/float64(all)*100))
-	md.SetTable([]string{"", "超危", "高危", "中危", "低危", "未知", "总计"}, Severities)
+	md.SetTable([]string{"", "Critical", "High", "Medium", "Low", "Unknow", "Total"}, Severities)
 	return md
 }
 func countFixedVuln(md *utils.Markdown, FixedVuln map[string]int, fixedCount int, vulnCount int) *utils.Markdown {

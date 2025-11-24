@@ -17,8 +17,8 @@ const (
 
 var (
 	ResultClass = map[types.ResultClass]string{
-		types.ClassOSPkg:   "系统层",
-		types.ClassLangPkg: "应用层",
+		types.ClassOSPkg:   "System layer",
+		types.ClassLangPkg: "Application layer",
 	}
 	ResultType = map[ftypes.TargetType]string{
 		ftypes.GoBinary: "Go Binary",
@@ -33,9 +33,9 @@ var (
 	}
 
 	VulnHeaderValues = []string{
-		"扫描对象", "扫描类型", "软件包类别", "漏洞编号", "漏洞名称",
-		"威胁等级来源", "威胁等级", "软件包名称", "软件包版本", "软件包路径",
-		"修复版本", "漏洞状态", "公布时间", "上次修改时间",
+		"Scanning Object", "Scan type", "Package Category", "Vulnerability ID", "Vulnerability Name",
+		"Threat Level Source", "Threat Level", "Package Name", "Package version", "Package path",
+		"Fixed version", "Vulnerability Status", "Announcement time", "Last modified time",
 	}
 	VulnHeaderWidths = map[string]float64{
 		"A": 10, "B": 10, "C": 25, "D": 21, "E": 50,
